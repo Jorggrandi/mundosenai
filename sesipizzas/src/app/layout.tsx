@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body>
+      <body className="bg-[url(/images/img2.jpg)] bg-cover">
         <Header/>
         {children}
       </body>

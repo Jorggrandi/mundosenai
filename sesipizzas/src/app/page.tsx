@@ -1,15 +1,18 @@
 import Image from "next/image";
+import ClientReviews from "./components/avaliações/review";
+
 
 export default function Home() {
   return (
+    <main>
     <div className="flex flex-row items-start h-screen px-10">
       {/* Imagem à esquerda */}
       <div className="w-1/2">
         <Image
-          src={""}
+          src="/images/image.png"
           alt="Pizza artesanal"
-          width={600}
-          height={600}
+          width={500}
+          height={500}
           className="object-cover rounded-lg"
         />
       </div>
@@ -23,8 +26,18 @@ export default function Home() {
           Descubra a verdadeira paixão por pizzas artesanais, preparadas com
           ingredientes frescos e entregues com carinho.
         </p>
-        <button></button>
-      </div>
+        <span className="mt-4 text-lg">
+          A Pizzaria di Fagioli nasceu com uma missão: unir alta performance e o melhor sabor. Com processos otimizados e ingredientes selecionados, entregamos pizzas artesanais com rapidez, sem abrir mão da qualidade.
+
+          tradição e tecnologia lado a lado, para levar até você uma experiência única - saborosa e eficiente.  
+        </span>
+     </div>
     </div>
+
+    <div>
+        <p className="text-center font-black text-3xl">Avaliações</p>
+        <ClientReviews/>
+    </div>
+    </main>
   );
 }
